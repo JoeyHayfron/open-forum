@@ -1,0 +1,38 @@
+.headerContainer {
+  background-color: #2e6c2f;
+  min-height: 70px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .headerTitle {
+    margin-left: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .headerButtons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+  }
+
+  .signed-in {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+
+    .user-name {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      align-self: center;
+    }
+  }
+}

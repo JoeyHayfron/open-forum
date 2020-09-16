@@ -1,0 +1,50 @@
+.cat-item {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+
+  .item-text {
+    display: flex;
+    flex-direction: column;
+
+    .cat-title {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .cat-subtitle {
+      font-size: 20px;
+    }
+  }
+
+  .images-container {
+    display: flex;
+
+    img {
+      height: 15px;
+      width: 15px;
+      align-self: center;
+    }
+
+    .image-container {
+      height: 100px;
+      width: 100px;
+      border-radius: 10px;
+
+      .image {
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  &:hover {
+    color: #949499;
+    cursor: pointer;
+  }
+}

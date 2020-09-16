@@ -1,0 +1,13 @@
+.topicsContent {
+  display: flex;
+  flex-direction: column;
+
+  .topicName {
+    margin-left: 40px;
+  }
+
+  .posts-heading {
+    width: 64%;
+    margin-left: 30px;
+  }
+}

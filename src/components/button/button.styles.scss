@@ -1,0 +1,25 @@
+.customButton {
+  display: flex;
+  justify-content: center;
+  background-color: #73c88e;
+  font-weight: bold;
+  color: white;
+  max-width: 190px;
+  width: auto;
+  margin: 10px;
+  height: 30px;
+  padding: 5px 17px;
+  font-size: 17px;
+  border: #73c88e;
+  border-radius: 3px;
+
+  &.isSignUp {
+    background-color: #d74372;
+    border: #d74372;
+  }
+
+  &.postBtn {
+    align-self: flex-end;
+    width: 100px;
+  }
+}

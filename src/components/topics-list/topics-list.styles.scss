@@ -1,0 +1,22 @@
+.topicsListContainer {
+  border: solid #ececec;
+  border-width: 0px 0px 0px 1px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  align-self: flex-end;
+  width: 30%;
+  position: absolute;
+  overflow-y: visible;
+  min-height: 100%;
+  height: auto;
+  margin: 30px 5px 0px 19px;
+  padding-right: 5px;
+  padding-left: 8px;
+
+  .topicsTitle {
+    margin-left: 10px;
+    color: #5c5c5c;
+    text-decoration: underline #97979c;
+  }
+}

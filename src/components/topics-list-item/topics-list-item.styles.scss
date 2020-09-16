@@ -1,0 +1,17 @@
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  .itemName {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+  }
+  .itemPostCount {
+    align-self: center;
+    font-size: 15px;
+  }
+}

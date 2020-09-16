@@ -1,0 +1,61 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  .content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f3f3f3;
+    width: 30%;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .or-divider {
+    margin-top: 30px;
+    display: flex;
+    color: #acacac;
+
+    hr {
+      background-color: #d4d4d4;
+      height: 0.2px;
+      width: 100%;
+    }
+
+    span {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .socials-logo-google {
+      height: 55px;
+      width: 55px;
+      border-radius: 27.5px;
+      margin-left: 10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .socials-logo-facebook {
+      margin-top: 4px;
+      height: 45px;
+      width: 45px;
+      border-radius: 22.5px;
+      margin-right: 10px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 35px;
+
+    button {
+      display: flex;
+      align-items: center;
+      height: 35px;
+      min-width: 100px;
+      width: auto;
+      color: white;
+      background-color: #73c88e;
+      border-color: #73c88e;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  }
+}
