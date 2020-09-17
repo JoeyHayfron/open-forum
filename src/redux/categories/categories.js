@@ -7,6 +7,8 @@ export const CAT = [
     imageUrl:
       'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0aacfc94-d1df-49f6-99a4-c57e2e8a5efc/dbwnflk-56a15508-8eac-4cd8-a5ed-658518c798ef.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMGFhY2ZjOTQtZDFkZi00OWY2LTk5YTQtYzU3ZTJlOGE1ZWZjXC9kYnduZmxrLTU2YTE1NTA4LThlYWMtNGNkOC1hNWVkLTY1ODUxOGM3OThlZi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.-29wSD58mF0GQxR8_o2d_lejSPz5Puc5aVaoH2vq5Qk',
     postCount: 20,
+    createdBy: 'ato',
+    createdAt: new Date(),
   },
   {
     id: 2,

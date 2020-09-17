@@ -7,3 +7,15 @@ export const selectCategoriesList = createSelector(
 
   (categories) => categories.categoriesList
 );
+
+export const selectCategoryLoading = createSelector(
+  [selectCategories],
+
+  (categories) => categories.isLoading
+);
+
+export const selectCategoryFetching = createSelector(
+  [selectCategories],
+
+  (categories) => !!categories.categoriesList
+);

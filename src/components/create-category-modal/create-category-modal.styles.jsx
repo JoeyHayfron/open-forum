@@ -8,7 +8,7 @@ export const CreateCategoryContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 460px;
+  height: 380px;
   background-color: white;
   border-radius: 20px;
   padding-left: 30px;

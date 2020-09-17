@@ -1,7 +1,5 @@
-import { CAT } from './categories';
-
 const INITIAL_STATE = {
-  categoriesList: CAT,
+  categoriesList: null,
   isLoading: false,
   errorMessage: undefined,
 };

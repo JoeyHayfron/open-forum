@@ -24,8 +24,7 @@ const CreateCategoryModal = ({ toggleModal }) => {
       <form>
         <ModalInput name="title" label />
         <ModalInput name="subtitle" label />
-        <FileInput type="file" />
-        <ImagePreview />
+        <ModalInput name="imageurl" label />
         <CreateButton>Create</CreateButton>
       </form>
     </CreateCategoryContainer>
