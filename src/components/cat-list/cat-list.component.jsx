@@ -12,15 +12,17 @@ const CatList = ({ categories }) => {
 
   return (
     <div className="cat-list">
-      {categories.map((item) => (
-        <CatItem
-          key={item.title}
-          title={item.title}
-          subtitle={item.subtitle}
-          imageUrl={item.imageUrl}
-          slug={item.slug}
-        />
-      ))}
+      {categories
+        .sort((a, b) => b.createdAt - a.createdAt)
+        .map((item) => (
+          <CatItem
+            key={item.title}
+            title={item.title}
+            subtitle={item.subtitle}
+            imageUrl={item.imageUrl}
+            slug={item.slug}
+          />
+        ))}
     </div>
   );
 };

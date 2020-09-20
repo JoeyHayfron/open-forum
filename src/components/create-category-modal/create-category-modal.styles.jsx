@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import FormInput from '../form-input/form-input.component';
 import FormButton from '../form-button/form-button.component';
 
@@ -25,12 +25,6 @@ export const CreateCategoryHeading = styled.div`
 
 export const ModalInput = styled(FormInput)`
   background-color: #f5f5f5;
-`;
-
-export const ImagePreview = styled.img`
-  height: 130px;
-  width: 130px;
-  margin-bottom: 10px;
 `;
 
 export const FileInput = styled.input`

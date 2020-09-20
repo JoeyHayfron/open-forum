@@ -30,26 +30,38 @@ export const fetchCategoriesAsync = () => {
   };
 };
 
-export const addCategory = (category) => {
-  return (dispatch) => {
-    firestore
-      .collection('categories')
-      .get()
-      .then((snapshot) => {
-        snapshot.forEach((doc) => {
-          if (doc.data().title === category.title) {
-            console.log('This category already exists');
-            return;
-          }
-        });
-      });
+export const categoryExists = async (category) => {
+  try {
+    const catRef = firestore.collection('categories');
 
-    firestore
-      .collection('categories')
-      .add(category)
-      .then((category) => {
-        console.log(category);
-      })
-      .catch((err) => console.log(err.message));
+    const snapshot = await catRef.get();
+    const exists = snapshot.docs.find(function (doc, index) {
+      if (doc.data().title === category.title) {
+        console.log(index);
+        console.log(category.title);
+        console.log(doc.data().title);
+        return true;
+      }
+    });
+    return exists;
+  } catch (err) {
+    console.log(err.message);
+  }
+};
+
+export const addCategory = (category) => {
+  return async (dispatch) => {
+    const hasCategory = await categoryExists(category);
+    var catAdded = '';
+    if (typeof hasCategory === 'undefined') {
+      const catRef = firestore.collection('categories');
+
+      catAdded = await catRef.add(category);
+      return !!catAdded;
+      console.log(!!catAdded);
+    } else {
+      return !!catAdded;
+      console.log(!!catAdded);
+    }
   };
 };
