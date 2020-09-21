@@ -14,6 +14,9 @@ import {
   addCategory,
   fetchCategoriesAsync,
 } from '../../redux/categories/categories.action';
+import { createStructuredSelector } from 'reselect';
+import { selectCurrentUser } from '../../redux/user/user.selector';
+import { withRouter } from 'react-router-dom';
 
 class CreateCategoryModal extends React.Component {
   constructor(props) {
@@ -36,7 +39,15 @@ class CreateCategoryModal extends React.Component {
   handleSubmit = async (event) => {
     event.preventDefault();
 
-    const { addCategory, toggleModal, fetchCategoriesAsync } = this.props;
+    const {
+      addCategory,
+      toggleModal,
+      fetchCategoriesAsync,
+      currentUser,
+      history,
+      match,
+    } = this.props;
+
     const {
       title,
       subtitle,
@@ -46,24 +57,28 @@ class CreateCategoryModal extends React.Component {
       createdAt,
     } = this.state;
 
-    const category = {
-      title,
-      subtitle,
-      imageUrl,
-      postCount,
-      slug: title.toLowerCase().replace(' ', '-'),
-      createdBy,
-      createdAt,
-    };
+    if (currentUser) {
+      const category = {
+        title,
+        subtitle,
+        imageUrl,
+        postCount,
+        slug: title.toLowerCase().replace(' ', '-'),
+        createdBy,
+        createdAt: currentUser.name,
+      };
 
-    const categoryAdded = await addCategory(category);
-    console.log(categoryAdded);
+      const categoryAdded = await addCategory(category);
 
-    if (categoryAdded) {
-      toggleModal();
-      fetchCategoriesAsync();
+      if (categoryAdded) {
+        toggleModal();
+        fetchCategoriesAsync();
+      } else {
+        alert('An error occured');
+      }
     } else {
-      alert('An error occured');
+      alert('You must be signed in to create a category');
+      history.push(`${match.path}signin/`);
     }
 
     this.setState({
@@ -94,10 +109,16 @@ class CreateCategoryModal extends React.Component {
   }
 }
 
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+});
 const mapDispatchToProps = (dispatch) => ({
   toggleModal: () => dispatch(toggleModal()),
   addCategory: (category) => dispatch(addCategory(category)),
   fetchCategoriesAsync: () => dispatch(fetchCategoriesAsync()),
 });
 
-export default connect(null, mapDispatchToProps)(CreateCategoryModal);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withRouter(CreateCategoryModal));

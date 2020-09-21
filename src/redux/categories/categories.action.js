@@ -33,13 +33,10 @@ export const fetchCategoriesAsync = () => {
 export const categoryExists = async (category) => {
   try {
     const catRef = firestore.collection('categories');
-
     const snapshot = await catRef.get();
     const exists = snapshot.docs.find(function (doc, index) {
       if (doc.data().title === category.title) {
         console.log(index);
-        console.log(category.title);
-        console.log(doc.data().title);
         return true;
       }
     });
@@ -55,13 +52,10 @@ export const addCategory = (category) => {
     var catAdded = '';
     if (typeof hasCategory === 'undefined') {
       const catRef = firestore.collection('categories');
-
       catAdded = await catRef.add(category);
       return !!catAdded;
-      console.log(!!catAdded);
     } else {
       return !!catAdded;
-      console.log(!!catAdded);
     }
   };
 };
