@@ -12,7 +12,7 @@ import './header.styles.scss';
 
 const Header = ({ history, currentUser }) => (
   <div className="headerContainer">
-    <h1 className="headerTitle" onClick={() => history.push('/')}>
+    <h1 className="headerTitle" onClick={() => history.push('/open-forum/')}>
       Open Forum
     </h1>
     {currentUser ? (
