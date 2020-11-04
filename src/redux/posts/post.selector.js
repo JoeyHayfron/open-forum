@@ -5,12 +5,24 @@ export const selectPosts = (state) => state.posts;
 export const selectPosts2 = createSelector(
   [selectPosts],
 
-  (posts) => posts.postList
+  (posts) => posts.postsList
 );
+
+export const selectPostLoading = createSelector(
+  [selectPosts],
+
+  (posts) => posts.postsLoading
+)
+
+export const postFetchingDone = createSelector(
+  [selectPosts],
+
+  (posts) => !!posts.postsList
+)
 
 export const selectPostsList = (categoryName) =>
   createSelector(
     [selectPosts2],
 
-    (postList) => postList.filter((item) => item.category === categoryName)
+    (postsList) => postsList.filter((item) => item.category === categoryName)
   );

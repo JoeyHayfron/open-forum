@@ -40,25 +40,25 @@ export const createUserDocument = async (userAuth, otherRelevantData) => {
   return userRef;
 };
 
-export const saveCategories = async (catItem) => {
-  firestore
-    .collection('categories')
-    .get()
-    .then((snapshot) => {
-      snapshot.forEach((doc) => {
-        if (doc.data().title === catItem.title) {
-          console.log('This category already exists');
-          return;
-        }
-      });
-    })
-    .catch((err) => {
-      console.log('An error occured', err.message);
-    });
+// export const saveCategories = async (catItem) => {
+//   firestore
+//     .collection('categories')
+//     .get()
+//     .then((snapshot) => {
+//       snapshot.forEach((doc) => {
+//         if (doc.data().title === catItem.title) {
+//           console.log('This category already exists');
+//           return;
+//         }
+//       });
+//     })
+//     .catch((err) => {
+//       console.log('An error occured', err.message);
+//     });
 
-  const category = await firestore.collections('categories').add(catItem);
-  return category;
-};
+//   const category = await firestore.collections('categories').add(catItem);
+//   return category;
+// };
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();

@@ -64,8 +64,8 @@ class CreateCategoryModal extends React.Component {
         imageUrl,
         postCount,
         slug: title.toLowerCase().replace(' ', '-'),
-        createdBy,
-        createdAt: currentUser.name,
+        createdBy: currentUser.name,
+        createdAt,
       };
 
       const categoryAdded = await addCategory(category);

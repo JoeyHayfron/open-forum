@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-  categoriesList: null,
+  categoriesList: [],
   isLoading: false,
   errorMessage: undefined,
 };
