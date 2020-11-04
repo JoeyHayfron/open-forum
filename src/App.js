@@ -38,20 +38,20 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/open-forum" component={HomePage} />
         <Route path="/topic" component={Topic} />
         <Route
           exact
           path="/signup"
           render={() =>
-            this.props.currentUser ? <Redirect to="/" /> : <SignUpPage />
+            this.props.currentUser ? <Redirect to="/open-forum" /> : <SignUpPage />
           }
         />
         <Route
           exact
           path="/signin"
           render={() =>
-            this.props.currentUser ? <Redirect to="/" /> : <SignInPage />
+            this.props.currentUser ? <Redirect to="/open-forum" /> : <SignInPage />
           }
         />
       </div>
