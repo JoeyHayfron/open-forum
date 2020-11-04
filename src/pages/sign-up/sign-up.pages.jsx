@@ -52,7 +52,7 @@ class SignUpPage extends React.Component {
       });
 
       console.log(userDoc);
-      if (userDoc) this.props.history.push('/open-forum');
+      if (userDoc) this.props.history.push('/open-forum/');
     } catch (err) {
       console.log(err.message);
     }
