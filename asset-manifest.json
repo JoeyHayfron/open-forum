@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/open-forum/static/css/main.1b5b8397.chunk.css",
+    "main.js": "/open-forum/static/js/main.60db7129.chunk.js",
+    "main.js.map": "/open-forum/static/js/main.60db7129.chunk.js.map",
+    "runtime-main.js": "/open-forum/static/js/runtime-main.9f00dd63.js",
+    "runtime-main.js.map": "/open-forum/static/js/runtime-main.9f00dd63.js.map",
+    "static/js/2.0383fa03.chunk.js": "/open-forum/static/js/2.0383fa03.chunk.js",
+    "static/js/2.0383fa03.chunk.js.map": "/open-forum/static/js/2.0383fa03.chunk.js.map",
+    "index.html": "/open-forum/index.html",
+    "precache-manifest.5479d63d2718e40c07ebed96f9c2eceb.js": "/open-forum/precache-manifest.5479d63d2718e40c07ebed96f9c2eceb.js",
+    "service-worker.js": "/open-forum/service-worker.js",
+    "static/css/main.1b5b8397.chunk.css.map": "/open-forum/static/css/main.1b5b8397.chunk.css.map",
+    "static/js/2.0383fa03.chunk.js.LICENSE.txt": "/open-forum/static/js/2.0383fa03.chunk.js.LICENSE.txt",
+    "static/media/facebook.svg": "/open-forum/static/media/facebook.ce0c8188.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9f00dd63.js",
+    "static/js/2.0383fa03.chunk.js",
+    "static/css/main.1b5b8397.chunk.css",
+    "static/js/main.60db7129.chunk.js"
+  ]
+}
