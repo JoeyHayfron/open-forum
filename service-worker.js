@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/open-forum/precache-manifest.47cfc42256f25732a3965fe60d5707c4.js"
+  "/open-forum/precache-manifest.6eebcbaaba95c166c789f39b9c14ab42.js"
 );
 
 self.addEventListener('message', (event) => {
