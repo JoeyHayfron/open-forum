@@ -33,6 +33,8 @@ class PostArea extends React.Component {
   handleSubmit = async (event) => {
     event.preventDefault();
 
+    const {fetchPostsAsync} = this.props;
+
     const {
       title,
       message,
@@ -55,6 +57,7 @@ class PostArea extends React.Component {
       if(postAdded)
       {
         alert('Post created succesfully');
+        fetchPostsAsync();
       }
     }else{
       alert('You need to sign in to post')
