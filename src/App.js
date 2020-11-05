@@ -38,7 +38,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <Route path="/open-forum/" component={HomePage} />
+        <Route exact path="/open-forum/" component={HomePage} />
         <Route path="/open-forum/topic" component={Topic} />
         <Route
           exact
