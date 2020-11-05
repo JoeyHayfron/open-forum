@@ -40,7 +40,7 @@ class App extends React.Component {
         <Header />
         <Switch>
         <Route exact path="/open-forum/" component={HomePage} />
-        <Route exact path="/open-forum/topic" component={Topic} />
+        <Route path="/open-forum/topic" component={Topic} />
         <Route
           exact
           path="/signup"
