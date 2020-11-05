@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 import Header from '../src/components/header/header.component';
 import Topic from '../src/pages/topic/topic.pages';
 import HomePage from '../src/pages/home/home.pages';
@@ -38,8 +38,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
+        <Switch>
         <Route exact path="/open-forum/" component={HomePage} />
-        <Route path="/open-forum/topic" component={Topic} />
+        <Route exact path="/open-forum/topic" component={Topic} />
         <Route
           exact
           path="/signup"
@@ -54,6 +55,8 @@ class App extends React.Component {
             this.props.currentUser ? <Redirect to="/open-forum/" /> : <SignInPage />
           }
         />
+        </Switch>
+       
       </div>
     );
   }
