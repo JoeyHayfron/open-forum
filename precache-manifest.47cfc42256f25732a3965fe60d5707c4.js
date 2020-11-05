@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "262a2625c11ca46c72faf68733c715f8",
+    "revision": "24229ab1c0b10d09b5144b7225cfcfb3",
     "url": "/open-forum/index.html"
   },
   {
-    "revision": "98efd3280fe119819d6a",
+    "revision": "c659a3c444f626348346",
     "url": "/open-forum/static/css/main.1b5b8397.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/open-forum/static/js/2.0622ea47.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "98efd3280fe119819d6a",
-    "url": "/open-forum/static/js/main.00c6098a.chunk.js"
+    "revision": "c659a3c444f626348346",
+    "url": "/open-forum/static/js/main.06d28888.chunk.js"
   },
   {
     "revision": "51c146dd14e3f0f441d4",
