@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/open-forum/static/css/main.1b5b8397.chunk.css",
-    "main.js": "/open-forum/static/js/main.582d357d.chunk.js",
-    "main.js.map": "/open-forum/static/js/main.582d357d.chunk.js.map",
+    "main.js": "/open-forum/static/js/main.c6d2471c.chunk.js",
+    "main.js.map": "/open-forum/static/js/main.c6d2471c.chunk.js.map",
     "runtime-main.js": "/open-forum/static/js/runtime-main.9f00dd63.js",
     "runtime-main.js.map": "/open-forum/static/js/runtime-main.9f00dd63.js.map",
     "static/js/2.0622ea47.chunk.js": "/open-forum/static/js/2.0622ea47.chunk.js",
     "static/js/2.0622ea47.chunk.js.map": "/open-forum/static/js/2.0622ea47.chunk.js.map",
     "index.html": "/open-forum/index.html",
-    "precache-manifest.cc494334364f157612e82de247a9db3d.js": "/open-forum/precache-manifest.cc494334364f157612e82de247a9db3d.js",
+    "precache-manifest.745fed5bffc878a78a4e09c3cdaf8ecc.js": "/open-forum/precache-manifest.745fed5bffc878a78a4e09c3cdaf8ecc.js",
     "service-worker.js": "/open-forum/service-worker.js",
     "static/css/main.1b5b8397.chunk.css.map": "/open-forum/static/css/main.1b5b8397.chunk.css.map",
     "static/js/2.0622ea47.chunk.js.LICENSE.txt": "/open-forum/static/js/2.0622ea47.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.9f00dd63.js",
     "static/js/2.0622ea47.chunk.js",
     "static/css/main.1b5b8397.chunk.css",
-    "static/js/main.582d357d.chunk.js"
+    "static/js/main.c6d2471c.chunk.js"
   ]
 }
