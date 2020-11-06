@@ -78,7 +78,7 @@ class CreateCategoryModal extends React.Component {
       }
     } else {
       alert('You must be signed in to create a category');
-      history.push(`${match.path}signin/`);
+      history.push(`${match.path}/open-forum/signin/`);
     }
 
     this.setState({

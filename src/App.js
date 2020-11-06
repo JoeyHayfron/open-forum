@@ -39,18 +39,18 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Switch>
-        <Route exact path="/open-forum/" component={HomePage} />
+        <Route exact path="/" component={HomePage} />
         <Route path="/open-forum/topic" component={Topic} />
         <Route
           exact
-          path="/signup"
+          path="/open-forum/signup"
           render={() =>
             this.props.currentUser ? <Redirect to="/open-forum/" /> : <SignUpPage />
           }
         />
         <Route
           exact
-          path="/signin"
+          path="/open-forum/signin"
           render={() =>
             this.props.currentUser ? <Redirect to="/open-forum/" /> : <SignInPage />
           }
