@@ -39,7 +39,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route path="/" component={HomePage} />
         <Route path="/open-forum/topic" component={Topic} />
         <Route
           exact
