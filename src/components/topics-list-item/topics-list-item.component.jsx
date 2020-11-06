@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './topics-list-item.styles.scss';
 
 const TopicsListItem = ({ item, match }) => {
-  const path = match.path;
+  const path = `${match.path}`;
   console.log(path);
   return (
     <Link className="listItem" to={path.includes(`topic`) : `${item.slug}` ? `topic/${item.slug}`}>
