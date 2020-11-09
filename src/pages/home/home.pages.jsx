@@ -12,7 +12,6 @@ import { toggleModal } from '../../redux/modal/modal.action';
 import {
   selectCategoriesList,
   selectCategoryLoading,
-  selectCategoryFetching,
 } from '../../redux/categories/category.selector';
 import { fetchCategoriesAsync } from '../../redux/categories/categories.action';
 import { createStructuredSelector } from 'reselect';
@@ -32,7 +31,6 @@ class HomePage extends React.Component {
       showModal,
       toggleModal,
       categories,
-      isLoading,
       isFetching,
     } = this.props;
     console.log(categories);
@@ -54,7 +52,6 @@ class HomePage extends React.Component {
 const mapStateToProps = createStructuredSelector({
   showModal: selectShowModal,
   categories: selectCategoriesList,
-  isLoading: selectCategoryLoading,
   isFetching: selectCategoriesList,
 });
 

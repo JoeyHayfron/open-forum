@@ -15,7 +15,7 @@ const CatItem = ({ title, subtitle, imageUrl, history, match, slug }) => {
         <div className="cat-subtitle">{subtitle}</div>
       </div>
       <div className="images-container">
-        <img src={Logo} />
+        <img src={Logo} alt="Logo"/>
         <div className="image-container">
           <img src={imageUrl} alt={title} className="image" />
         </div>

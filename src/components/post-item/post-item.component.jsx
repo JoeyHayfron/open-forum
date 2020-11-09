@@ -14,7 +14,7 @@ const PostItem = ({ item }) => (
       <div className="post-message">{item.message}</div>
     </div>
     <span className="del">
-      <img src={Logo} />
+      <img src={Logo} alt="Delete icon"/>
     </span>
   </div>
 );

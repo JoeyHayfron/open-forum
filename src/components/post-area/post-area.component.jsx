@@ -9,7 +9,6 @@ import CustomButton from '../button/button.component';
 import CustomInput from '../input/input.component';
 import CustomTextArea from '../textarea/textarea.component';
 import './post-area.styles.scss';
-import { create } from 'domain';
 
 class PostArea extends React.Component {
   constructor(props){
